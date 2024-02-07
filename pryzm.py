@@ -3,7 +3,7 @@ import capsolver
 import sys
 import os
 
-address = sys.argv[1]
+address = sys.argv[1] #wallet
 
 def get_captcha():
     capsolver.api_key = sys.argv[2]  # capsolver.com
@@ -34,12 +34,8 @@ def get_token(address):
         "Sec-Fetch-Mode": "cors",
         "Sec-Fetch-Site": "same-site",
     }
-
     data = {"address": address}
-
     response = requests.get(url, headers)
-
     print(response.status_code, response.text)
-
 
 get_token(address)
