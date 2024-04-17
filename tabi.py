@@ -6,7 +6,7 @@ import os
 # Proxy configuration
 PROXIES = {"http": sys.argv[1], "https": sys.argv[1]}
 address = sys.argv[2]
-
+ 
 def get_token(address):
     url = f"https://faucet-api.testnet.tabichain.com/api/faucet"
     headers = {
