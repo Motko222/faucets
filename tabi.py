@@ -2,7 +2,7 @@ import requests
 import capsolver
 import sys
 import os
- 
+  
 # Proxy configuration
 PROXIES = {"http": sys.argv[1], "https": sys.argv[1]}
 address = sys.argv[2]
